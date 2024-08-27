@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio Manager</title>
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header class="sticky-header sticky-top bg-primary text-white p-3">
+      <div class="container">
+        <h1>My Sticky Header</h1>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-3">
+      <h2>Your portfolio</h2>
+      <button id="addNewBtn" class="btn btn-primary">Add new</button>
+
+      <!-- Form Section -->
+      <div id="addForm" style="visibility: hidden">
+        <form>
+          <!-- First Row: Can be any content -->
+          <div class="row">
+            <div class="col">Content 1</div>
+            <div class="col">Content 2</div>
+            <div class="col">Content 3</div>
+            <div class="col">Content 4</div>
+            <div class="col">Content 5</div>
+            <div class="col">Content 6</div>
+            <div class="col">Content 7</div>
+            <div class="col">Content 8</div>
+          </div>
+
+          <!-- Second Row: 8 Input Fields -->
+          <div class="row mt-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 1" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 2" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 3" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 4" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 5" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 6" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 7" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Input 8" />
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button id="submitBtn" class="btn btn-success mt-3" type="button">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
