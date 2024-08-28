@@ -15,65 +15,102 @@
     <!-- Sticky Header -->
     <header class="sticky-header sticky-top bg-primary text-white p-3">
       <div class="container">
-        <h1>My Sticky Header</h1>
+        <h5>My Sticky Header</h5>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container mt-3">
-      <h2>Your portfolio</h2>
-      <button id="addNewBtn" class="btn btn-primary">Add new</button>
+    <div id="not-header">
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <a href="table1.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-      <!-- Form Section -->
-      <div id="addForm" style="visibility: hidden">
-        <form>
-          <!-- First Row: Can be any content -->
-          <div class="row">
-            <div class="col">Content 1</div>
-            <div class="col">Content 2</div>
-            <div class="col">Content 3</div>
-            <div class="col">Content 4</div>
-            <div class="col">Content 5</div>
-            <div class="col">Content 6</div>
-            <div class="col">Content 7</div>
-            <div class="col">Content 8</div>
+      <!-- Main Content -->
+      <div id="main-page">
+        <div class="container mt-3">
+          <h5>Your portfolio</h5>
+          <button id="addNewBtn" class="btn btn-primary">Add new</button>
+
+          <!-- Form Section -->
+          <div id="addForm" style="visibility: hidden">
+            <form>
+              <!-- First Row: Can be any content -->
+              <div class="row">
+                <div class="col">Content 1</div>
+                <div class="col">Content 2</div>
+                <div class="col">Content 3</div>
+                <div class="col">Content 4</div>
+                <div class="col">Content 5</div>
+                <div class="col">Content 6</div>
+                <div class="col">Content 7</div>
+                <div class="col">Content 8</div>
+              </div>
+
+              <!-- Second Row: 8 Input Fields -->
+              <div class="row mt-3">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 1" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 2" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 3" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 4" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 5" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 6" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 7" />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Input 8" />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button id="submitBtn" class="btn btn-success mt-3" type="button">
+                Submit
+              </button>
+            </form>
           </div>
-
-          <!-- Second Row: 8 Input Fields -->
-          <div class="row mt-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 1" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 2" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 3" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 4" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 5" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 6" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 7" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Input 8" />
-            </div>
-          </div>
-
-          <!-- Submit Button -->
-          <button id="submitBtn" class="btn btn-success mt-3" type="button">
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

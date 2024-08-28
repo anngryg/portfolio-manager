@@ -1,6 +1,62 @@
-body {
-  background-color: black;
+:root {
+  --sidebar-color: #222831;
+  --header-color: #222831;
+  --btn-color: rgb(250, 138, 33);
+  --btn-border: black;
+  --background-color: #31363f;
+  --text-color: #eeeeee;
 }
+
+body {
+  color: var(--text-color) !important;
+  background-color: var(--background-color);
+}
+
 header.sticky-header {
-  background-color: purple !important;
+  height: 50px;
+  padding: 5px;
+  color: var(--text-color) !important;
+  background-color: var(--header-color) !important;
+}
+
+#not-header {
+  display: flex;
+}
+
+#sidebar {
+  height: calc(100vh - 50px); /* Full height minus header height */
+  width: 160px;
+  position: fixed;
+  top: 50px; /* Offset by the height of the header */
+  left: 0;
+  background-color: var(--sidebar-color);
+  overflow-x: hidden;
+  padding-top: 16px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--text-color);
+  display: block;
+}
+
+#sidebar a:hover {
+  color: var(--btn-color);
+}
+
+#main-page {
+  margin-left: 180px; /* Adjust based on sidebar width */
+  padding: 20px;
+}
+
+button {
+  background-color: var(--btn-color) !important;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e1e1e1 !important; /* Optional: change hover background color */
 }
